@@ -1,37 +1,29 @@
 // Exception Handeling
-// foult tollerent capability;
+// fault tolerant capability;
 // Try - catch
 // Throws
 // try, catch, throw
 
 void main (){
-
-
   printer();
-
 }
 
 void printer (){
   try {
     printHeadLine();
-  } catch(e){
+  } catch(e) {
     print('Some thing went Wrong: ${e.toString()}');
   }
 
   printContent();
 }
 
-void printHeadLine(){
-  throw Exception('not printing ');
-  print('Printing Headline')
+void printHeadLine() {
+  throw Exception('not printing');
+
 
 }
 void printContent(){
-
-  print('Printing Main Content')
-
+  print('Printing Main Content');
 }
 
-class customException implement  Exception  {
-
-}
